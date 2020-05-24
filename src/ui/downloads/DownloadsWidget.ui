@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DownloadsWidget</class>
+ <widget class="QWidget" name="DownloadsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="labelArchives">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Archives</string>
+        </property>
+        <property name="indent">
+         <number>12</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tablePackages">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Files</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Size</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="labelImportable">
+          <property name="font">
+           <font>
+            <family>Helvetica Neue</family>
+            <pointsize>22</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Importable items</string>
+          </property>
+          <property name="indent">
+           <number>12</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnImportMakeMkv">
+          <property name="text">
+           <string>Import movie with MakeMKV</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableImports">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>170</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Files</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Size</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>i18n/qt_cs.qm</file>
+        <file>i18n/qt_de.qm</file>
+        <file>i18n/qt_es.qm</file>
+        <file>i18n/qt_fr.qm</file>
+        <file>i18n/qt_lt.qm</file>
+        <file>i18n/qt_pl.qm</file>
+        <file>i18n/qt_pt.qm</file>
+        <file>i18n/qt_zh_CN.qm</file>
+        <file>i18n/MediaElch_cs_CZ.qm</file>
+        <file>i18n/MediaElch_de.qm</file>
+        <file>i18n/MediaElch_en.qm</file>
+        <file>i18n/MediaElch_en_US.qm</file>
+        <file>i18n/MediaElch_es_ES.qm</file>
+        <file>i18n/MediaElch_fr.qm</file>
+        <file>i18n/MediaElch_it.qm</file>
+        <file>i18n/MediaElch_nl_NL.qm</file>
+        <file>i18n/MediaElch_no.qm</file>
+        <file>i18n/MediaElch_pl.qm</file>
+        <file>i18n/MediaElch_pt_BR.qm</file>
+        <file>i18n/MediaElch_pt_PT.qm</file>
+        <file>i18n/MediaElch_zh_CN.qm</file>
+        <file>i18n/MediaElch_fi.qm</file>
+        <file>i18n/MediaElch_ko.qm</file>
+        <file>i18n/qt_it.qm</file>
+        <file>i18n/qt_ko.qm</file>
+        <file>i18n/MediaElch_bg.qm</file>
+        <file>i18n/MediaElch_da.qm</file>
+        <file>i18n/MediaElch_ja.qm</file>
+        <file>i18n/MediaElch_ru.qm</file>
+        <file>i18n/qt_ru.qm</file>
+        <file>i18n/MediaElch_sv.qm</file>
+    </qresource>
+</RCC>

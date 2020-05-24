@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageDialog</class>
+ <widget class="QDialog" name="ImageDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>667</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Choose an Image</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,1,0,0">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QComboBox" name="imageProvider"/>
+     </item>
+     <item>
+      <widget class="MyLineEdit" name="searchTerm">
+       <property name="toolTip">
+        <string>Enter a search term or URL</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="imageSource">
+     <property name="text">
+      <string notr="true">Image source</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblErrorMessage">
+     <property name="text">
+      <string notr="true">error message here</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblSuccessMessage">
+     <property name="text">
+      <string notr="true">success message here</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="results">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Movie</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="MyTableWidget" name="table">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollPerPixel</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Neue Spalte</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Neue Spalte</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Neue Spalte</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Neue Spalte</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Neue Spalte</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="noResultsLabel">
+         <property name="text">
+          <string notr="true">No images found</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="ImageGallery" name="gallery" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>100</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,1,0,0,0,0">
+     <item>
+      <widget class="QToolButton" name="buttonZoomOut">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Zoom out</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/MediaElch.qrc">
+         <normaloff>:/img/zoom_out.png</normaloff>:/img/zoom_out.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="previewSizeSlider">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Preview size</string>
+       </property>
+       <property name="minimum">
+        <number>4</number>
+       </property>
+       <property name="maximum">
+        <number>20</number>
+       </property>
+       <property name="singleStep">
+        <number>1</number>
+       </property>
+       <property name="pageStep">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>8</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonZoomIn">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Zoom in</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../data/MediaElch.qrc">
+         <normaloff>:/img/zoom_in.png</normaloff>:/img/zoom_in.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSpinner">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelLoading">
+       <property name="text">
+        <string>Loading...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonChoose">
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>Choose Local Image</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonClose">
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnAcceptImages">
+       <property name="text">
+        <string>Accept Images</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageGallery</class>
+   <extends>QWidget</extends>
+   <header>ui/small_widgets/ImageGallery.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MyTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>ui/small_widgets/MyTableWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>ui/small_widgets/MyLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../data/MediaElch.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,14 @@
+# OS specific
+.directory
+.DS_Store
+
+docs/build
+docs/source/release-notes.rst
+
+*.mo
+build_*
+_build
+
+# IDE
+.vscode
+

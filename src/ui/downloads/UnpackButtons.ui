@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnpackButtons</class>
+ <widget class="QWidget" name="UnpackButtons">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>470</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="minimum">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="format">
+      <string notr="true">%p%</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnStop">
+     <property name="toolTip">
+      <string>Cancel extraction</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../data/MediaElch.qrc">
+       <normaloff>:/img/stop_white.png</normaloff>:/img/stop_white.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnUnpack">
+     <property name="toolTip">
+      <string>Extract without password</string>
+     </property>
+     <property name="text">
+      <string>Extract</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnUnpackWithPassword">
+     <property name="toolTip">
+      <string>Extract with password</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../data/MediaElch.qrc">
+       <normaloff>:/img/lock_white.png</normaloff>:/img/lock_white.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnDelete">
+     <property name="toolTip">
+      <string>Delete this archive</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../data/MediaElch.qrc">
+       <normaloff>:/img/trash_white.png</normaloff>:/img/trash_white.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>12</width>
+       <height>12</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../data/MediaElch.qrc"/>
+ </resources>
+ <connections/>
+</ui>

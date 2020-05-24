@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=MediaElch
+Icon=MediaElch
+Terminal=false
+Exec=MediaElch
+Categories=AudioVideo;AudioVideoEditing;
+GenericName=Media Manager

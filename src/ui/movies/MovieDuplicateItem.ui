@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MovieDuplicateItem</class>
+ <widget class="QWidget" name="MovieDuplicateItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>151</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelMovieTitle">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string notr="true">Title</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelFiles">
+        <property name="text">
+         <string notr="true">Files</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,1">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="2" column="0">
+          <widget class="QLabel" name="iconTitle">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">TextLabel</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="iconTmdbId">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">TextLabel</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Movie title</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="iconImdbId">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string notr="true">TextLabel</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>TMDb ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>IMDb ID</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

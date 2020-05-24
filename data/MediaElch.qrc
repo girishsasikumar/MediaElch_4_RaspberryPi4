@@ -1,0 +1,183 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/spinner.gif</file>
+        <file>img/stop.png</file>
+        <file>img/magnifier.png</file>
+        <file>img/pattern_dark.png</file>
+        <file>img/arrow_circle_right.png</file>
+        <file>img/zoom_in.png</file>
+        <file>img/zoom_out.png</file>
+        <file>img/man.png</file>
+        <file>img/arrow_circle_left.png</file>
+        <file>img/btn_donate_LG.gif</file>
+        <file>img/MediaElch.png</file>
+        <file>img/video_pause_64.png</file>
+        <file>img/video_play_64.png</file>
+        <file>img/checkmark_white_64.png</file>
+        <file>img/closeImage.png</file>
+        <file>img/imgButtonRight.png</file>
+        <file>img/imgButtonLeft.png</file>
+        <file>img/imgButtonBottom.png</file>
+        <file>img/imgButtonTop.png</file>
+        <file>img/folder_64.png</file>
+        <file>img/star_blue.png</file>
+        <file>img/reload_orange.png</file>
+        <file>img/lock_white.png</file>
+        <file>img/stop_white.png</file>
+        <file>img/trash_white.png</file>
+        <file>img/missing.png</file>
+        <file>img/heart_red_open.png</file>
+        <file>img/ui_select.png</file>
+        <file>img/ui_check.png</file>
+        <file>img/ui_uncheck.png</file>
+        <file>img/money_64.png</file>
+        <file>img/arrow_circle_right_white.png</file>
+        <file>img/minus_white.png</file>
+        <file>img/plus_white.png</file>
+        <file>img/disc_64.png</file>
+        <file>img/inbox_64.png</file>
+        <file>fonts/Pe-icon-7-stroke.ttf</file>
+        <file>img/placeholders/poster.png</file>
+        <file>img/placeholders/banner.png</file>
+        <file>img/placeholders/cd_art.png</file>
+        <file>img/placeholders/character_art.png</file>
+        <file>img/placeholders/clear_art.png</file>
+        <file>img/placeholders/fanart.png</file>
+        <file>img/placeholders/logo.png</file>
+        <file>img/placeholders/thumb.png</file>
+        <file>img/photo.png</file>
+    </qresource>
+    <qresource prefix="/media">
+        <file alias="aspect/1.31">img/mediaFlags/aspect/1.33.png</file>
+        <file alias="aspect/1.32">img/mediaFlags/aspect/1.33.png</file>
+        <file alias="aspect/1.33">img/mediaFlags/aspect/1.33.png</file>
+        <file alias="aspect/1.34">img/mediaFlags/aspect/1.33.png</file>
+        <file alias="aspect/1.35">img/mediaFlags/aspect/1.33.png</file>
+        <file alias="aspect/1.36">img/mediaFlags/aspect/1.38.png</file>
+        <file alias="aspect/1.37">img/mediaFlags/aspect/1.38.png</file>
+        <file alias="aspect/1.38">img/mediaFlags/aspect/1.38.png</file>
+        <file alias="aspect/1.66">img/mediaFlags/aspect/1.66.png</file>
+        <file alias="aspect/1.67">img/mediaFlags/aspect/1.66.png</file>
+        <file alias="aspect/1.68">img/mediaFlags/aspect/1.66.png</file>
+        <file alias="aspect/1.77">img/mediaFlags/aspect/1.78.png</file>
+        <file alias="aspect/1.78">img/mediaFlags/aspect/1.78.png</file>
+        <file alias="aspect/1.79">img/mediaFlags/aspect/1.78.png</file>
+        <file alias="aspect/1.82">img/mediaFlags/aspect/1.82.png</file>
+        <file alias="aspect/1.83">img/mediaFlags/aspect/1.82.png</file>
+        <file alias="aspect/1.84">img/mediaFlags/aspect/1.85.png</file>
+        <file alias="aspect/1.85">img/mediaFlags/aspect/1.85.png</file>
+        <file alias="aspect/1.86">img/mediaFlags/aspect/1.85.png</file>
+        <file alias="aspect/2.00">img/mediaFlags/aspect/2.00.png</file>
+        <file alias="aspect/2.14">img/mediaFlags/aspect/2.14.png</file>
+        <file alias="aspect/2.22">img/mediaFlags/aspect/2.24.png</file>
+        <file alias="aspect/2.24">img/mediaFlags/aspect/2.24.png</file>
+        <file alias="aspect/2.33">img/mediaFlags/aspect/2.35.png</file>
+        <file alias="aspect/2.34">img/mediaFlags/aspect/2.35.png</file>
+        <file alias="aspect/2.35">img/mediaFlags/aspect/2.35.png</file>
+        <file alias="aspect/2.36">img/mediaFlags/aspect/2.35.png</file>
+        <file alias="aspect/2.37">img/mediaFlags/aspect/2.39.png</file>
+        <file alias="aspect/2.38">img/mediaFlags/aspect/2.39.png</file>
+        <file alias="aspect/2.39">img/mediaFlags/aspect/2.39.png</file>
+        <file alias="aspect/2.40">img/mediaFlags/aspect/2.40.png</file>
+        <file alias="aspect/2.41">img/mediaFlags/aspect/2.40.png</file>
+        <file alias="aspect/2.42">img/mediaFlags/aspect/2.43.png</file>
+        <file alias="aspect/2.43">img/mediaFlags/aspect/2.43.png</file>
+        <file alias="aspect/2.48">img/mediaFlags/aspect/2.48.png</file>
+        <file alias="aspect/2.50">img/mediaFlags/aspect/2.50.png</file>
+        <file alias="aspect/2.52">img/mediaFlags/aspect/2.50.png</file>
+        <file alias="aspect/2.55">img/mediaFlags/aspect/2.55.png</file>
+        <file alias="aspect/2.73">img/mediaFlags/aspect/2.76.png</file>
+        <file alias="aspect/2.76">img/mediaFlags/aspect/2.76.png</file>
+        <file alias="resolution/480p">img/mediaFlags/resolution/480.png</file>
+        <file alias="resolution/540p">img/mediaFlags/resolution/540.png</file>
+        <file alias="resolution/576p">img/mediaFlags/resolution/576.png</file>
+        <file alias="resolution/720p">img/mediaFlags/resolution/720.png</file>
+        <file alias="resolution/1080p">img/mediaFlags/resolution/1080.png</file>
+        <file alias="resolution/2160p">img/mediaFlags/resolution/2160.png</file>
+        <file alias="resolution/4320p">img/mediaFlags/resolution/4320.png</file>
+        <file alias="resolution/480">img/mediaFlags/resolution/480.png</file>
+        <file alias="resolution/540">img/mediaFlags/resolution/540.png</file>
+        <file alias="resolution/576">img/mediaFlags/resolution/576.png</file>
+        <file alias="resolution/720">img/mediaFlags/resolution/720.png</file>
+        <file alias="resolution/1080">img/mediaFlags/resolution/1080.png</file>
+        <file alias="resolution/2160">img/mediaFlags/resolution/2160.png</file>
+        <file alias="resolution/4320">img/mediaFlags/resolution/4320.png</file>
+        <file alias="resolution/480i">img/mediaFlags/resolution/480.png</file>
+        <file alias="resolution/540i">img/mediaFlags/resolution/540.png</file>
+        <file alias="resolution/576i">img/mediaFlags/resolution/576.png</file>
+        <file alias="resolution/720i">img/mediaFlags/resolution/720.png</file>
+        <file alias="resolution/1080i">img/mediaFlags/resolution/1080.png</file>
+        <file alias="channels/2">img/mediaFlags/audio/2ch.png</file>
+        <file alias="channels/5">img/mediaFlags/audio/5ch.png</file>
+        <file alias="channels/6">img/mediaFlags/audio/6ch.png</file>
+        <file alias="channels/7">img/mediaFlags/audio/7ch.png</file>
+        <file alias="channels/8">img/mediaFlags/audio/8ch.png</file>
+        <file alias="audio/dolbydigital">img/mediaFlags/audio/dolbydigital.png</file>
+        <file alias="audio/dolbydigitalplus">img/mediaFlags/audio/dolbydigitalplus.png</file>
+        <file alias="audio/dolbytruehd">img/mediaFlags/audio/dolbytruehd.png</file>
+        <file alias="audio/dts">img/mediaFlags/audio/dts.png</file>
+        <file alias="audio/dtshdma">img/mediaFlags/audio/dtshdma.png</file>
+        <file alias="audio/flac">img/mediaFlags/audio/flac.png</file>
+        <file alias="audio/mp2">img/mediaFlags/audio/mp2.png</file>
+        <file alias="audio/mp3">img/mediaFlags/audio/mp3.png</file>
+        <file alias="audio/vorbis">img/mediaFlags/audio/vorbis.png</file>
+        <file alias="audio/aac">img/mediaFlags/audio/aac.png</file>
+        <file alias="source/bluray">img/mediaFlags/source/bluray.png</file>
+        <file alias="source/dvd">img/mediaFlags/source/dvd.png</file>
+        <file alias="codec/avc">img/mediaFlags/codec/h264.png</file>
+        <file alias="codec/av1">img/mediaFlags/codec/av1.png</file>
+        <file alias="codec/avc1">img/mediaFlags/codec/avc1.png</file>
+        <file alias="codec/avchd">img/mediaFlags/codec/avchd.png</file>
+        <file alias="codec/divx">img/mediaFlags/codec/divx.png</file>
+        <file alias="codec/flv">img/mediaFlags/codec/flv.png</file>
+        <file alias="codec/h264">img/mediaFlags/codec/h264.png</file>
+        <file alias="codec/xvid">img/mediaFlags/codec/xvid.png</file>
+        <file alias="codec/hevc">img/mediaFlags/codec/hevc.png</file>
+        <file alias="codec/mpeg">img/mediaFlags/codec/mpeg2.png</file>
+        <file alias="codec/mpeg1">img/mediaFlags/codec/mpeg2.png</file>
+        <file alias="codec/mpeg2">img/mediaFlags/codec/mpeg2.png</file>
+        <file alias="codec/vc-1">img/mediaFlags/codec/vc-1.png</file>
+        <file alias="codec/wmv3">img/mediaFlags/codec/wmv3.png</file>
+        <file alias="audio/dtshdhra">img/mediaFlags/audio/dtshdhra.png</file>
+        <file alias="audio/dtshdx">img/mediaFlags/audio/dtshdx.png</file>
+        <file alias="audio/dolbyatmos">img/mediaFlags/audio/dolbyatmos.png</file>
+    </qresource>
+    <qresource prefix="/mediaStatus">
+        <file alias="actors/green">img/mediaStatus/actors_green.png</file>
+        <file alias="actors/red">img/mediaStatus/actors_red.png</file>
+        <file alias="extraArts/green">img/mediaStatus/extraarts_green.png</file>
+        <file alias="extraArts/red">img/mediaStatus/extraarts_red.png</file>
+        <file alias="extraArts/yellow">img/mediaStatus/extraarts_yellow.png</file>
+        <file alias="fanart/green">img/mediaStatus/fanart_green.png</file>
+        <file alias="fanart/red">img/mediaStatus/fanart_red.png</file>
+        <file alias="poster/green">img/mediaStatus/poster_green.png</file>
+        <file alias="poster/red">img/mediaStatus/poster_red.png</file>
+        <file alias="trailer/green">img/mediaStatus/trailers_green.png</file>
+        <file alias="trailer/red">img/mediaStatus/trailers_red.png</file>
+        <file alias="extraFanarts/green">img/mediaStatus/extrafanarts_green.png</file>
+        <file alias="extraFanarts/red">img/mediaStatus/extrafanarts_red.png</file>
+        <file alias="streamDetails/green">img/mediaStatus/streamdetails_green.png</file>
+        <file alias="streamDetails/red">img/mediaStatus/streamdetails_red.png</file>
+        <file alias="id/green">img/mediaStatus/id_green.png</file>
+        <file alias="id/red">img/mediaStatus/id_red.png</file>
+        <file alias="banner/green">img/mediaStatus/banner_green.png</file>
+        <file alias="banner/red">img/mediaStatus/banner_red.png</file>
+        <file alias="clearart/green">img/mediaStatus/clearart_green.png</file>
+        <file alias="clearart/red">img/mediaStatus/clearart_red.png</file>
+        <file alias="logo/green">img/mediaStatus/logo_green.png</file>
+        <file alias="logo/red">img/mediaStatus/logo_red.png</file>
+        <file alias="thumb/green">img/mediaStatus/thumb_green.png</file>
+        <file alias="thumb/red">img/mediaStatus/thumb_red.png</file>
+    </qresource>
+    <qresource prefix="/menu">
+        <file alias="about">img/menu/about.png</file>
+        <file alias="export">img/menu/export.png</file>
+        <file alias="reload">img/menu/reload.png</file>
+        <file alias="rename">img/menu/rename.png</file>
+        <file alias="save">img/menu/save.png</file>
+        <file alias="saveall">img/menu/saveall.png</file>
+        <file alias="scrape">img/menu/scrape.png</file>
+        <file alias="settings">img/menu/settings.png</file>
+        <file alias="sync">img/menu/sync.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConcertWidget</class>
+ <widget class="QWidget" name="ConcertWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>952</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="buttonRevert">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Concert has changed. Click to revert changes.</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../../../data/MediaElch.qrc">
+         <normaloff>:/img/arrow_circle_left.png</normaloff>:/img/arrow_circle_left.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="concertName">
+       <property name="font">
+        <font>
+         <family>Helvetica Neue</family>
+         <pointsize>22</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Concert Name</string>
+       </property>
+       <property name="indent">
+        <number>4</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="MediaFlags" name="mediaFlags" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0,0">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Information</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="ConcertInfoWidget" name="concertInfo" native="true"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Extended</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="TagCloud" name="genreCloud" native="true"/>
+          </item>
+          <item>
+           <widget class="TagCloud" name="tagCloud" native="true"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Extra Fanarts</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <item>
+           <widget class="ImageGallery" name="fanarts" native="true"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,0,0">
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="font">
+               <font>
+                <italic>true</italic>
+               </font>
+              </property>
+              <property name="text">
+               <string>Hint: Closed images will be deleted on save.</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnAddExtraFanart">
+              <property name="text">
+               <string>Add Images</string>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Streamdetails</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="ConcertStreamDetailsWidget" name="concertStreamdetails" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line">
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,1">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="artStackedWidgetButtons" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>69</width>
+               <height>1</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonArtPageOne">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonArtPageTwo">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>1</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+          <zorder>buttonArtPageTwo</zorder>
+          <zorder>buttonArtPageOne</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="SlidingStackedWidget" name="artStackedWidget">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="labelPoster">
+              <property name="text">
+               <string>Poster</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ClosableImage" name="poster">
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>290</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>180</width>
+                <height>290</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Click to Change</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../../data/MediaElch.qrc">:/img/placeholders/poster.png</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="clickable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="myFixedHeight" stdset="0">
+               <number>290</number>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelFanart">
+              <property name="text">
+               <string>Fanart</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ClosableImage" name="backdrop">
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>180</width>
+                <height>120</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Click to Change</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../../data/MediaElch.qrc">:/img/placeholders/fanart.png</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="clickable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="myFixedHeight" stdset="0">
+               <number>120</number>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="labelLogo">
+              <property name="text">
+               <string>Logo</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ClosableImage" name="logo">
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>110</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>180</width>
+                <height>110</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Click to Change</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../../data/MediaElch.qrc">:/img/placeholders/logo.png</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="clickable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="myFixedHeight" stdset="0">
+               <number>110</number>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelClearArt">
+              <property name="text">
+               <string>Clear Art</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ClosableImage" name="clearArt">
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>155</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>180</width>
+                <height>155</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Click to Change</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../../data/MediaElch.qrc">:/img/placeholders/clear_art.png</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="clickable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="myFixedHeight" stdset="0">
+               <number>155</number>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelDiscArt">
+              <property name="text">
+               <string>CD Art</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ClosableImage" name="cdArt">
+              <property name="minimumSize">
+               <size>
+                <width>180</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>180</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Click to Change</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="../../../data/MediaElch.qrc">:/img/placeholders/cd_art.png</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="clickable" stdset="0">
+               <bool>true</bool>
+              </property>
+              <property name="myFixedHeight" stdset="0">
+               <number>200</number>
+              </property>
+              <property name="dropShadow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TagCloud</class>
+   <extends>QWidget</extends>
+   <header>ui/small_widgets/TagCloud.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ImageGallery</class>
+   <extends>QWidget</extends>
+   <header>ui/small_widgets/ImageGallery.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ClosableImage</class>
+   <extends>QLabel</extends>
+   <header>ui/small_widgets/ClosableImage.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SlidingStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>ui/small_widgets/SlidingStackedWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MediaFlags</class>
+   <extends>QWidget</extends>
+   <header>ui/small_widgets/MediaFlags.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ConcertInfoWidget</class>
+   <extends>QWidget</extends>
+   <header>ui/concerts/ConcertInfoWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ConcertStreamDetailsWidget</class>
+   <extends>QWidget</extends>
+   <header>ui/concerts/ConcertStreamDetailsWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../data/MediaElch.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonArtPageOne</sender>
+   <signal>clicked()</signal>
+   <receiver>ConcertWidget</receiver>
+   <slot>onArtPageOne()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonArtPageTwo</sender>
+   <signal>clicked()</signal>
+   <receiver>ConcertWidget</receiver>
+   <slot>onArtPageTwo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>807</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onArtPageOne()</slot>
+  <slot>onArtPageTwo()</slot>
+ </slots>
+</ui>

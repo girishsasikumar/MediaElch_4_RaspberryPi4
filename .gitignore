@@ -1,0 +1,57 @@
+CMakeLists.txt.user*
+
+# Dependencies
+ZenLib
+MediaInfoDLL
+
+# OS specific
+.directory
+.DS_Store
+MediaInfoDLL
+ZenLib
+
+# IDEs
+.vscode
+
+# Fake data
+scripts/generated_media
+scripts/library/Demo.*
+
+# Doxygen
+doc/html
+
+# Build
+*.pro.user*
+Makefile
+build*/
+*.AppImage
+
+# ---> C++
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

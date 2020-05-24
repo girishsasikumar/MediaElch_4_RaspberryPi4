@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileScannerDialog</class>
+ <widget class="QDialog" name="FileScannerDialog">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Scanner</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../../data/MediaElch.qrc">
+    <normaloff>:/img/MediaElch.png</normaloff>:/img/MediaElch.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="status">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="currentDir">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../data/MediaElch.qrc"/>
+ </resources>
+ <connections/>
+</ui>
